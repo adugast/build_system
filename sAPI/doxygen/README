@@ -1,0 +1,13 @@
+You can generate doxygen documentation for the API from here.
+1. Go in the doxygen directory
+2. do "doxygen doxygen.cfg"
+
+By default, it will generate the documentation in the html and latex format.
+-> Just type "firefox html/index" to get access to the local page
+of the generated documentation.
+
+The whole doxygen documentation generation can be configure in the doxygen.cfg file
+Please refere to the Doxygen documentation for more details.
+
+link: http://www.stack.nl/~dimitri/doxygen/
+
