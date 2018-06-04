@@ -4,40 +4,6 @@ Very simple build system to create an API next to a project.
 Provides minimal directory architecture to build a project and its API with documentation.    
 Uses CMAKE to build and Doxygene for the documentation.   
 
-```
-    .
-    |-- LICENSE
-    |-- project
-    |      |-- build
-    |      |-- CMakeLists.txt
-    |      |-- src
-    |           |-- main.c
-    |-- README.md
-    |-- sAPI
-          |-- build
-          |-- CMakeLists.txt
-          |-- doxygen
-          |      |-- doxygen.cfg
-          |      |-- README
-          |      |-- sAPI.jpg
-          |-- examples
-          |      |-- build
-          |      |-- CMakeLists.txt
-          |      |-- readelf.c
-          |      |-- timer.c
-          |-- export
-          |      |-- sprint.h
-          |      |-- sreadelf.h
-          |      |-- stimer.h
-          |-- main.c
-          |-- src
-               |-- sprint.c
-               |-- sreadelf.c
-               |-- stimer.c
-               |-- toolbox.c
-
-```
-
 ## sAPI directory (build the API as shared lib)   
 
 This directory contains the build architecture to build a new API as shared library.   
@@ -76,3 +42,39 @@ In /sAPI/example/build/
 Use "cmake .." to build examples that uses the API.    
 
 /!\ Obviously the API should be the first part to be compiled before being able to use it in the project or in the examples.    
+
+## Tree view of the build system
+
+```
+    .
+    |-- LICENSE
+    |-- project
+    |      |-- build
+    |      |-- CMakeLists.txt
+    |      |-- src
+    |           |-- main.c
+    |-- README.md
+    |-- sAPI
+          |-- build
+          |-- CMakeLists.txt
+          |-- doxygen
+          |      |-- doxygen.cfg
+          |      |-- README
+          |      |-- sAPI.jpg
+          |-- examples
+          |      |-- build
+          |      |-- CMakeLists.txt
+          |      |-- readelf.c
+          |      |-- timer.c
+          |-- export
+          |      |-- sprint.h
+          |      |-- sreadelf.h
+          |      |-- stimer.h
+          |-- main.c
+          |-- src
+               |-- sprint.c
+               |-- sreadelf.c
+               |-- stimer.c
+               |-- toolbox.c
+
+```
