@@ -5,7 +5,7 @@
  */
 
 /*!
- * \mainpage yAPI
+ * \mainpage sAPI
  *
  * Hello1
  *
