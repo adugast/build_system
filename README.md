@@ -1,7 +1,7 @@
 # build_system
 
 Very simple build system to create an API next to a project.   
-Provides minimal directory architecture to build a project and it's API with documentation.    
+Provides minimal directory architecture to build a project and its API with documentation.    
 Uses CMAKE to build and Doxygene for the documentation.    
 
 ## sAPI directory (build the API as shared lib)   
