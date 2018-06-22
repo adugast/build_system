@@ -3,7 +3,7 @@
 - This repo is a very simple build system architecture to create an API next to a project.   
 - Provides a minimal directory architecture to build a project and its API with the needed documentation.    
 - It uses CMAKE to build and Doxygene for the documentation.   
-- Currently used for a C Project/API but can be adapted to use C++ or even both. ((1) C++ wrapper around C API or (2) A part of the API that uses C and another part that used C++)
+- Currently used for a C Project/API but can be adapted to use C++.
 
 ## sAPI directory (build the API as shared lib)   
 
