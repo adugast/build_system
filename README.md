@@ -82,7 +82,7 @@ Take a look at the Doxygen documentation to understand how the syntax works to c
 
 ```
 
-## Ideas of improvement
+## Ideas for improvements
 
 * Create a build system version mixed with buildroot for embedded systems project (and to go further, even extend it with qemu virtualizer).
 * Add option in CMake to be able to build the library also as a static lib.
