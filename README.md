@@ -17,7 +17,7 @@ Contains the sources of the API and local header files
 In /sAPI/export/   
 Contains only the headers of the API that you want to export    
 
-## project directory (build the main project with the shared lib)    
+## Project directory (build the main project with the shared lib)    
 
 In /project/build/    
 Use "cmake .." to build the main project that uses the API.   
