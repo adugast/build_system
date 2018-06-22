@@ -1,4 +1,4 @@
-# build_system [![Builder: CMake](https://img.shields.io/badge/Builder-CMake-brightgreen.svg)](https://cmake.org/) [![Documentation: Doxygen](https://img.shields.io/badge/Documentation-Doxygen-brightgreen.svg)](http://www.stack.nl/~dimitri/doxygen/index.html)
+# Build System [![Builder: CMake](https://img.shields.io/badge/Builder-CMake-brightgreen.svg)](https://cmake.org/) [![Documentation: Doxygen](https://img.shields.io/badge/Documentation-Doxygen-brightgreen.svg)](http://www.stack.nl/~dimitri/doxygen/index.html)
 
 - This repo is a very simple build system architecture to create an API next to a project.   
 - Provides a minimal directory architecture to build a project and its API with the needed documentation.    
