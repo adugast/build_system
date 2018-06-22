@@ -1,13 +1,14 @@
-# build_system
+# build_system [![Builder: CMake](https://img.shields.io/badge/Builder-CMake-brightgreen.svg)](https://cmake.org/) [![Documentation: Doxygen](https://img.shields.io/badge/Documentation-Doxygen-brightgreen.svg)](http://www.stack.nl/~dimitri/doxygen/index.html)
 
-Very simple build system to create an API next to a project.   
-Provides minimal directory architecture to build a project and its API with documentation.    
-Uses CMAKE to build and Doxygene for the documentation.   
+- This repo is a very simple build system architecture to create an API next to a project.   
+- Provides a minimal directory architecture to build a project and its API with the needed documentation.    
+- It uses CMAKE to build and Doxygene for the documentation.   
 
 ## sAPI directory (build the API as shared lib)   
 
-This directory contains the build architecture to build a new API as shared library.   
-Choice of building a shared lib is to be common for multiples apps   
+The sAPI directory contains the build architecture to build a new API as shared library.   
+The choice of building a shared lib is to make it common on the system and that can be used for multiples apps without duplicating the code of the lib.     
+(Idea of improvement: Add option in CMake to build the lib as a static lib)
 
 In /sAPI/build   
 Use "cmake .." to build the shared library containing the API.  
@@ -27,7 +28,7 @@ In /project/src/
 Contains the sources for the project   
 
 ## Documenting the API
-
+    
 You can generate a documentation from the API in different format via Doxygen as following:    
 
 In /sAPI/doxygen/    
@@ -42,6 +43,11 @@ In /sAPI/example/build/
 Use "cmake .." to build examples that uses the API.    
 
 /!\ Obviously the API should be the first part to be compiled before being able to use it in the project or in the examples.    
+
+Take a look at the Doxygen documentation to understand how the syntax works to create neat documentations.
+
+* [Doxygen](http://www.stack.nl/~dimitri/doxygen/index.html) - Documentation generator
+
 
 ## Tree view of the build system
 
@@ -78,3 +84,7 @@ Use "cmake .." to build examples that uses the API.
                |-- toolbox.c
 
 ```
+
+## Idea of improvement
+
+* Create a build system version mixed with buildroot for embedded systems project (and to go further, even extend it with qemu virtualizer)
