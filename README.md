@@ -8,8 +8,6 @@
 
 The sAPI directory contains the build architecture to build a new API as shared library.   
 
-The choice of building a shared lib is to make it common on the system and that can be used for multiples apps without duplicating the code of the lib.     
-
 In /sAPI/build   
 Use "cmake .." to build the shared library containing the API.  
 
