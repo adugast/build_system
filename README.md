@@ -7,8 +7,8 @@
 ## sAPI directory (build the API as shared lib)   
 
 The sAPI directory contains the build architecture to build a new API as shared library.   
+
 The choice of building a shared lib is to make it common on the system and that can be used for multiples apps without duplicating the code of the lib.     
-(Idea of improvement: Add option in CMake to build the lib as a static lib)
 
 In /sAPI/build   
 Use "cmake .." to build the shared library containing the API.  
@@ -48,7 +48,6 @@ Take a look at the Doxygen documentation to understand how the syntax works to c
 
 * [Doxygen](http://www.stack.nl/~dimitri/doxygen/index.html) - Documentation generator
 
-
 ## Tree view of the build system
 
 ```
@@ -85,6 +84,7 @@ Take a look at the Doxygen documentation to understand how the syntax works to c
 
 ```
 
-## Idea of improvement
+## Ideas of improvement
 
-* Create a build system version mixed with buildroot for embedded systems project (and to go further, even extend it with qemu virtualizer)
+* Create a build system version mixed with buildroot for embedded systems project (and to go further, even extend it with qemu virtualizer).
+* Add option in CMake to be able to build the library also as a static lib.
